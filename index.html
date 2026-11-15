@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional portfolio of Priya Panchanathan — enterprise automation, quality engineering, healthcare technology, data quality and AI evaluation.">
+<meta name="theme-color" content="#101827">
+<title>Priya Panchanathan | Enterprise Automation & Quality Engineering</title>
+<style>
+:root{
+ --ink:#172235;--muted:#617086;--paper:#f5f7fb;--white:#fff;--navy:#101827;
+ --blue:#2864dc;--cyan:#48c4d7;--line:#e4e9f1;--soft:#edf3ff;--green:#16836a;
+ --shadow:0 18px 50px rgba(22,38,66,.09);--radius:22px;--max:1160px
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none} a:hover{color:var(--blue)}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,24,39,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;color:#fff}
+.brand{font-weight:800;letter-spacing:.09em;font-size:.88rem}.brand span{color:var(--cyan)}
+nav{display:flex;gap:25px;font-size:.88rem;color:#c5d0e0}nav a:hover{color:#fff}
+.menu{display:none;background:none;border:1px solid #526078;color:#fff;border-radius:9px;padding:7px 11px}
+.hero{background:radial-gradient(ellipse at 80% 20%,rgba(40,100,220,.35),transparent 36%),radial-gradient(ellipse at 15% 90%,rgba(72,196,215,.16),transparent 34%),var(--navy);color:#fff;padding:94px 0 88px;overflow:hidden;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:#a9c5ff;font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.dot{width:8px;height:8px;border-radius:50%;background:#54d6b0;box-shadow:0 0 0 5px rgba(84,214,176,.13)}
+h1{font-size:clamp(2.6rem,6vw,5.1rem);line-height:1.03;letter-spacing:-.055em;margin:22px 0 20px;max-width:800px}
+.gradient{background:linear-gradient(95deg,#fff 10%,#9edcf2 55%,#8daeff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;line-height:1.8;color:#c5d0e0;max-width:710px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;font-weight:750;font-size:.93rem;transition:.2s}
+.btn-primary{background:#fff;color:#14213a}.btn-primary:hover{background:#dff7ff;color:#14213a;transform:translateY(-2px)}
+.btn-outline{border:1px solid #52627c;color:#fff}.btn-outline:hover{border-color:#fff;color:#fff}
+.hero-card{border:1px solid rgba(255,255,255,.16);background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.035));border-radius:26px;padding:27px;box-shadow:0 25px 70px rgba(0,0,0,.18)}
+.orbit{height:190px;display:grid;place-items:center;position:relative;margin-bottom:12px}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(134,190,255,.35);border-radius:50%;width:170px;height:170px}
+.orbit:after{width:125px;height:125px;border-color:rgba(72,196,215,.45)}
+.core{width:86px;height:86px;border-radius:25px;background:linear-gradient(145deg,#3e7cf2,#43c5d3);display:grid;place-items:center;box-shadow:0 0 55px rgba(72,196,215,.35);z-index:1}
+.core svg{width:43px;height:43px}
+.orbit-label{position:absolute;font-size:.72rem;color:#c6d9f7;background:#1c2b45;border:1px solid #3b5274;padding:5px 9px;border-radius:20px}
+.o1{top:4px;left:50%;transform:translateX(-50%)}.o2{right:-2px;top:85px}.o3{bottom:4px;left:50%;transform:translateX(-50%)}.o4{left:-3px;top:85px}
+.hero-card h3{margin:5px 0 8px;font-size:1.08rem}.hero-card p{color:#c5d0e0;font-size:.9rem;margin:0}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative;z-index:2}
+.metric{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.metric strong{display:block;font-size:1.7rem;letter-spacing:-.04em;color:#1c4fc1}.metric span{font-size:.83rem;color:var(--muted)}
+section{padding:88px 0}.section-head{max-width:740px;margin-bottom:35px}.kicker{color:var(--blue);font-size:.76rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-.045em;margin:10px 0 14px}
+.section-head p{color:var(--muted);font-size:1.04rem;margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 8px 30px rgba(22,38,66,.035)}
+.panel p{color:var(--muted);margin:0 0 14px}.panel p:last-child{margin-bottom:0}
+.focus-list{display:grid;gap:13px;margin-top:18px}
+.focus{display:flex;gap:13px;align-items:flex-start}.check{width:25px;height:25px;flex:0 0 25px;border-radius:8px;background:#eaf2ff;color:#245bd0;display:grid;place-items:center;font-weight:900}
+.focus b{display:block;font-size:.95rem}.focus small{color:var(--muted);font-size:.86rem}
+.skills{background:#eef3fa}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.skill-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;transition:.2s}
+.skill-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.skill-icon{width:43px;height:43px;border-radius:13px;background:var(--soft);color:var(--blue);display:grid;place-items:center;margin-bottom:15px}
+.skill-icon svg{width:22px;height:22px}.skill-card h3{font-size:1.06rem;margin:0 0 8px}.skill-card p{font-size:.9rem;color:var(--muted);margin:0 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{font-size:.75rem;color:#38506e;background:#f0f4f9;border:1px solid #e5ebf3;border-radius:30px;padding:5px 9px}
+.timeline{position:relative;display:grid;gap:18px}
+.role{display:grid;grid-template-columns:190px 1fr;gap:25px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}
+.role-date{color:var(--blue);font-weight:800;font-size:.86rem}.role h3{margin:0 0 3px;font-size:1.1rem}.role .org{color:var(--muted);font-size:.9rem;margin-bottom:12px}.role p{margin:0;color:var(--muted);font-size:.93rem}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.project{padding:25px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+.project-num{font-size:.75rem;letter-spacing:.14em;color:var(--blue);font-weight:850}.project h3{margin:9px 0 7px}.project p{margin:0;color:var(--muted);font-size:.91rem}
+.proof{background:linear-gradient(135deg,#12213b,#1c3c68);color:#fff}
+.proof .section-head p{color:#c4d2e6}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proof-card{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);padding:23px;border-radius:17px}
+.proof-card h3{margin:0 0 8px;font-size:1rem}.proof-card p{margin:0;color:#c5d0e0;font-size:.9rem}
+.training{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.training-list{display:grid;gap:12px}
+.training-item{display:flex;justify-content:space-between;gap:15px;padding:15px 17px;border:1px solid var(--line);border-radius:13px;background:#fff}
+.training-item b{font-size:.9rem}.training-item span{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.credentials{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.credential{padding:16px;border-radius:13px;background:#fff;border:1px solid var(--line);font-size:.9rem}.credential span{display:block;color:var(--muted);font-size:.8rem;margin-top:3px}
+.cta{background:linear-gradient(120deg,#e9f2ff,#e7f8f8);border:1px solid #d7e5f3;border-radius:25px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{font-size:2.2rem;margin:0 0 9px}.cta p{color:var(--muted);margin:0;max-width:650px}
+.cta .btn-primary{background:#1d55c7;color:#fff}.cta .btn-primary:hover{background:#143f9b}
+footer{background:#101827;color:#aebbd0;padding:30px 0;font-size:.84rem}
+.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row strong{color:#fff}
+.note{font-size:.8rem;color:var(--muted);margin-top:18px}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:480px}.metrics{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(2,1fr)}.proof-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:7px}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:64px}nav{display:none;position:absolute;top:64px;left:0;right:0;padding:18px 22px;background:#101827;flex-direction:column;gap:15px}.nav.open nav{display:flex}.menu{display:block}.hero{padding:70px 0 65px}.metrics{margin-top:-20px;gap:9px}.metric{padding:16px}.metric strong{font-size:1.4rem}section{padding:65px 0}.about-grid,.skill-grid,.project-grid,.training{grid-template-columns:1fr}.panel{padding:23px}.role{padding:20px}.credentials{grid-template-columns:1fr}.cta{padding:27px;align-items:flex-start;flex-direction:column}.footer-row{flex-direction:column;align-items:flex-start}}
+@media print{header,.hero-actions,.cta .btn,footer{display:none!important}body{background:#fff}.hero{padding:35px 0}.metrics{margin:20px 0 0}.metric,.panel,.skill-card,.role,.project{box-shadow:none;break-inside:avoid}section{padding:35px 0}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav" id="nav">
+  <a class="brand" href="#top">PRIYA <span>PANCHANATHAN</span></a>
+  <nav aria-label="Main navigation">
+   <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#work">Solutions</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+ </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> ENTERPRISE TECHNOLOGY • QUALITY • AUTOMATION</div>
+   <h1>Engineering reliable outcomes with <span class="gradient">automation, data & AI.</span></h1>
+   <p class="lead">I'm Priya Panchanathan — an enterprise technology professional with a career spanning healthcare technology, quality engineering, automation, application operations and technical enablement.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="#experience">Explore my experience <span aria-hidden="true">↗</span></a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/priya-p-6b4577ab/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+   </div>
+  </div>
+  <aside class="hero-card" aria-label="Professional focus">
+   <div class="orbit">
+    <span class="orbit-label o1">DATA QUALITY</span><span class="orbit-label o2">CLOUD</span>
+    <span class="orbit-label o3">GENAI</span><span class="orbit-label o4">AUTOMATION</span>
+    <div class="core"><svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2"><path d="M24 5 39 13.5v21L24 43 9 34.5v-21L24 5Z"/><path d="m9 13.5 15 9 15-9M24 22.5V43M16 9.5l16 9M32 9.5l-16 9"/></svg></div>
+   </div>
+   <h3>Technology at the intersection of quality and delivery</h3>
+   <p>Bringing together automation engineering, data validation, cloud tooling and AI evaluation to solve practical enterprise problems.</p>
+  </aside>
+ </div>
+</section>
+<div class="wrap metrics" aria-label="Career highlights">
+ <div class="metric"><strong>2007</strong><span>Career began at TCS</span></div>
+ <div class="metric"><strong>100+</strong><span>Support processes automated, as recorded in CV</span></div>
+ <div class="metric"><strong>10</strong><span>Tool implementations guided</span></div>
+ <div class="metric"><strong>Healthcare</strong><span>Deep enterprise domain experience</span></div>
+</div>
+
+<section id="about">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">01 / About</div><h2>Enterprise experience. Engineering mindset. Continuous evolution.</h2><p>A career built around making complex technology operations more dependable, measurable and efficient.</p></div>
+  <div class="about-grid">
+   <div class="panel">
+    <p>Since beginning my professional journey at Tata Consultancy Services in 2007, I have worked across software development, test automation, automation leadership and application operations for enterprise healthcare environments.</p>
+    <p>My experience includes provider services, health plan applications, ETL environments, job monitoring, production support, workflow automation and quality engineering.</p>
+    <p>I enjoy translating business and operational needs into structured technical solutions — supported by clear design, maintainable automation, testing discipline, documentation and team enablement.</p>
+   </div>
+   <div class="panel">
+    <h3 style="margin:0 0 5px">What I bring</h3>
+    <div class="focus-list">
+     <div class="focus"><span class="check">✓</span><div><b>Enterprise automation delivery</b><small>Framework design, process automation, monitoring and operational efficiency.</small></div></div>
+     <div class="focus"><span class="check">✓</span><div><b>Quality engineering</b><small>Test strategy, automation frameworks, ETL validation and reconciliation.</small></div></div>
+     <div class="focus"><span class="check">✓</span><div><b>Healthcare technology context</b><small>Provider data, health plans, credentialing, network management and clinical workflows.</small></div></div>
+     <div class="focus"><span class="check">✓</span><div><b>Technical leadership & enablement</b><small>Solution design, mentoring, knowledge transfer and technical training.</small></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="skills" id="expertise">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">02 / Expertise</div><h2>Capabilities across the engineering lifecycle</h2><p>My foundation is enterprise automation and quality engineering, complemented by continued learning in cloud, data and generative AI technologies.</p></div>
+  <div class="skill-grid">
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div><h3>Automation Engineering</h3><p>Designing and evolving maintainable automation solutions for enterprise workflows and operations.</p><div class="tags"><span class="tag">Python</span><span class="tag">PowerShell</span><span class="tag">Selenium</span><span class="tag">Blue Prism</span><span class="tag">Pega Robotics</span></div></article>
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></div><h3>Data & ETL Quality</h3><p>Validating data pipelines, database actions and source-to-target outcomes with a test-first mindset.</p><div class="tags"><span class="tag">SQL</span><span class="tag">MongoDB</span><span class="tag">ETL Testing</span><span class="tag">Pandas</span><span class="tag">DataComPy*</span><span class="tag">Great Expectations*</span></div></article>
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/><circle cx="12" cy="12" r="5"/></svg></div><h3>GenAI Quality & Evaluation</h3><p>Building capability in evaluation and quality assurance for LLM and retrieval-augmented applications.</p><div class="tags"><span class="tag">RAGAS*</span><span class="tag">DeepEval*</span><span class="tag">Prompt Engineering</span><span class="tag">LLM evaluation*</span></div></article>
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 18a4 4 0 0 1 .5-8A6.5 6.5 0 0 1 18 8a5 5 0 0 1 1 10H5Z"/><path d="m9 14 3-3 3 3m-3-3v8"/></svg></div><h3>Cloud & DevOps</h3><p>Working knowledge of cloud environments and delivery toolchains for automation and testing workflows.</p><div class="tags"><span class="tag">AWS</span><span class="tag">Boto3</span><span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Git</span><span class="tag">Maven</span></div></article>
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6M7 17h3"/></svg></div><h3>Test Architecture & Delivery</h3><p>Automation framework architecture, test planning, BDD, CI/CD integration and quality reporting.</p><div class="tags"><span class="tag">Pytest*</span><span class="tag">Behave BDD</span><span class="tag">TestNG</span><span class="tag">UFT</span><span class="tag">ALM</span><span class="tag">Jenkins</span></div></article>
+   <article class="skill-card"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2.5 20c.5-4 2.3-6 5.5-6s5 2 5.5 6M13 15c.8-.7 1.8-1 3-1 3.2 0 5 2 5.5 6"/></svg></div><h3>Leadership & Enablement</h3><p>Guiding implementation, coordinating teams, mentoring associates and conducting technical training.</p><div class="tags"><span class="tag">Solution design</span><span class="tag">Mentoring</span><span class="tag">Knowledge transfer</span><span class="tag">Training</span></div></article>
+  </div>
+  <p class="note">* Technologies marked with an asterisk are part of my current learning and capability-building focus, not a claim of long-term production delivery experience.</p>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">03 / Experience</div><h2>Professional journey</h2><p>Enterprise delivery experience across healthcare software, provider services, automation and application operations.</p></div>
+  <div class="timeline">
+   <article class="role"><div class="role-date">Sep 2023 – Present<br>TCS</div><div><h3>Quality Engineer · Flexible Network Solutions</h3><div class="org">Cigna Corporate Services, LLC</div><p>Working on provider services applications covering provider demographics, payment and banking details, and provider networks. Responsibilities include requirements review, test analysis and creation, and modifying automation scripts. Technologies recorded: Python, Behave BDD, MongoDB and ETL testing; environment includes HCPM, AWS and Databricks consoles.</p></div></article>
+   <article class="role"><div class="role-date">Jan 2021 – Sep 2023<br>TCS</div><div><h3>Automation Lead · HBOR Core Operations</h3><div class="org">Cigna Corporate Services, LLC</div><p>Contributed to provider credentialing, reporting, network management, contracting and fee schedule maintenance. Responsibilities included high- and low-level design, development, unit testing, implementation strategy, code promotion, QA/production support, offshore coordination and mentoring.</p></div></article>
+   <article class="role"><div class="role-date">Jan 2019 – Dec 2020<br>TCS</div><div><h3>Developer · Global Application Operations & Support</h3><div class="org">Cigna Corporate Services, LLC</div><p>Supported application, server, middleware and ETL operations. Served as an RPA subject matter expert; created process and solution design documentation, configured automation processes and objects, and supported delivery, documentation and training. Tools included Blue Prism, Ignio, PowerShell and Pega Robotics.</p></div></article>
+   <article class="role"><div class="role-date">Dec 2016 – Mar 2018<br>TCS</div><div><h3>Developer · Global Application Operations & Support</h3><div class="org">Cigna Corporate Services, LLC</div><p>Guided implementation of 10 tools for job monitoring, email monitoring and data validation. The CV records 100+ support processes automated using tools and languages including Selenium, Python, TestComplete, Ansible and Java. Also worked on production-process automation, CI/CD with GitHub and Jenkins, metrics and ROI reporting.</p></div></article>
+   <article class="role"><div class="role-date">Dec 2015 – May 2016<br>TCS</div><div><h3>Automation Lead · Health Plan QE</h3><div class="org">Kaiser Permanente</div><p>Expanded framework coverage to database actions, upgraded a QTP-based framework containing 2,000+ test cases for UFT 14 compatibility, and trained offshore testers on the updated framework.</p></div></article>
+   <article class="role"><div class="role-date">Jun 2008 – Nov 2015<br>TCS</div><div><h3>Automation Engineer · ProVation Medical QA</h3><div class="org">Wolters Kluwer Health</div><p>Worked on automation estimation and planning, framework design and script development, test strategy, metrics, traceability, audit and knowledge transfer. Contributed as a faculty member in the TCS L&D CLP programme and received recognition as best faculty in function automation, as recorded in the CV.</p></div></article>
+   <article class="role"><div class="role-date">Nov 2007 – Apr 2008<br>TCS</div><div><h3>Developer · Initial Learning Program</h3><div class="org">Tata Consultancy Services</div><p>Completed foundational software engineering training and contributed to an Airlines Management System project using J2EE.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="skills" id="work">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">04 / Solution themes</div><h2>Problems I enjoy solving</h2><p>These themes connect my delivery experience with the areas I am actively developing for future enterprise needs.</p></div>
+  <div class="project-grid">
+   <article class="project"><div class="project-num">SOLUTION THEME 01</div><h3>Enterprise ETL quality & reconciliation</h3><p>Build a repeatable quality layer for data pipelines: profile incoming data, apply validation rules, compare source and target datasets, and publish traceable test evidence.</p><div class="tags" style="margin-top:15px"><span class="tag">Python</span><span class="tag">Great Expectations</span><span class="tag">DataComPy</span><span class="tag">Pytest</span></div></article>
+   <article class="project"><div class="project-num">SOLUTION THEME 02</div><h3>GenAI / RAG quality evaluation</h3><p>Establish evaluation workflows for retrieval and answer quality, groundedness and response relevance, with repeatable test datasets and reports.</p><div class="tags" style="margin-top:15px"><span class="tag">RAGAS</span><span class="tag">DeepEval</span><span class="tag">Python</span></div></article>
+   <article class="project"><div class="project-num">SOLUTION THEME 03</div><h3>Intelligent operations automation</h3><p>Reduce repetitive operational effort through scripting, scheduled checks, monitoring, alerting and consistent evidence capture across supported environments.</p><div class="tags" style="margin-top:15px"><span class="tag">PowerShell</span><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">Docker</span></div></article>
+   <article class="project"><div class="project-num">SOLUTION THEME 04</div><h3>Reusable test automation frameworks</h3><p>Develop maintainable automation foundations with clear design, modular scripts, test orchestration, CI/CD integration, reporting and team adoption practices.</p><div class="tags" style="margin-top:15px"><span class="tag">Python</span><span class="tag">Behave</span><span class="tag">Selenium</span><span class="tag">Jenkins</span></div></article>
+  </div>
+  <p class="note">These are portfolio solution themes and areas of focus, not claims that each is a completed client deployment.</p>
+ </div>
+</section>
+
+<section class="proof">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker" style="color:#8fb6ff">05 / Delivery strengths</div><h2>From engineering execution to team enablement</h2><p>Selected outcomes and responsibilities documented across my professional experience.</p></div>
+  <div class="proof-grid">
+   <div class="proof-card"><h3>Automation at scale</h3><p>CV records 100+ support processes automated and implementation guidance for 10 monitoring, alerting and data-validation tools.</p></div>
+   <div class="proof-card"><h3>Framework modernisation</h3><p>Worked on upgrading a legacy automation framework with 2,000+ test cases for compatibility with a newer UFT version.</p></div>
+   <div class="proof-card"><h3>Knowledge multiplication</h3><p>Delivered internal training and knowledge-transfer sessions in automation, BDD architecture, operations automation and related topics.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="learning">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">06 / Learning & credentials</div><h2>Building the next layer of capability</h2><p>Combining a foundation in automation and quality with structured learning in data, cloud and generative AI.</p></div>
+  <div class="training">
+   <div><h3 style="margin-top:0">Certifications & learning</h3><div class="credentials">
+    <div class="credential"><b>ISTQB</b><span>Certified June 2015</span></div>
+    <div class="credential"><b>QuickTest Professional (UFT)</b><span>September 2008</span></div>
+    <div class="credential"><b>Quality Center (ALM)</b><span>September 2008</span></div>
+    <div class="credential"><b>Pega Robotics Mission</b><span>May 2020</span></div>
+    <div class="credential"><b>MongoDB Developer</b><span>Edureka · December 2023</span></div>
+    <div class="credential"><b>AWS Skill Builder</b><span>Generative AI, prompt engineering, CodeWhisperer and technical accreditation · 2024</span></div>
+   </div></div>
+   <div><h3 style="margin-top:0">Training delivered</h3><div class="training-list">
+    <div class="training-item"><b>Agile Automation</b><span>2024</span></div>
+    <div class="training-item"><b>Automation Framework Adoption</b><span>2023</span></div>
+    <div class="training-item"><b>BDD Wrapped Automation Architecture</b><span>2022</span></div>
+    <div class="training-item"><b>Advent of Visual Automation</b><span>2021</span></div>
+    <div class="training-item"><b>Automation with Blue Prism</b><span>2019</span></div>
+    <div class="training-item"><b>Introduction to Ops Automation</b><span>2018</span></div>
+    <div class="training-item"><b>Introduction to Protractor</b><span>2015</span></div>
+    <div class="training-item"><b>Automation Training & Hands-on Workshop</b><span>2013–2014</span></div>
+   </div></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="cta">
+   <div><div class="kicker">Let's connect</div><h2>Let's build dependable enterprise technology.</h2><p>Open to connecting with technology leaders, engineering teams, recruiters and collaborators working across automation, quality engineering, healthcare technology, data and AI.</p></div>
+   <a class="btn btn-primary" href="https://www.linkedin.com/in/priya-p-6b4577ab/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><strong>Priya Panchanathan</strong><br>Enterprise Automation • Quality Engineering • Data & AI</div><div>© <span id="year">2026</span> Priya Panchanathan · Professional portfolio</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));</script>
+</body>
+  </html>
